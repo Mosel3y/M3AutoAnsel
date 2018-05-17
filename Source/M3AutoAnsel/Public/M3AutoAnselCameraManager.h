@@ -16,7 +16,7 @@ class M3AUTOANSEL_API AM3AutoAnselCameraManager : public APlayerCameraManager
 	GENERATED_BODY()
 
 private:
-	void DelayByFrame(int32 DelayFrames, FLatentActionInfo LatentActionInfo);
+	void AdvanceFrame(uint32 FrameDelay);
 	
 protected:
 	virtual void BeginPlay();
@@ -25,4 +25,7 @@ protected:
 
 public:
 	void StartCapture();
+
+private:
+	uint32 FrameDelay;
 };
