@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "M3AutoAnselCaptureManager.h"
+#include "M3AutoAnselCapturePawn.h"
 #include "M3AutoAnselGameMode.generated.h"
 
 /**
